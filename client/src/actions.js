@@ -12,7 +12,7 @@ export const dealCards = (dispatch) => {
     cardsArr[i] = 'blue_' + i + '.png';
   }
 
-  console.log(cardsArr);
+  console.log("in actions.js", cardsArr);
 
   dispatch({
     type: actionNames.dealCards,

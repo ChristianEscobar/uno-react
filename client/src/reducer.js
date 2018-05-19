@@ -6,7 +6,7 @@ export const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  console.log("in reducer", action.payload);
+
   switch(action.type) {
     // Add action types here
     case actionNames.dealCards:

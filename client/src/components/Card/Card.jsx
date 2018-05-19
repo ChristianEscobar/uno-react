@@ -6,14 +6,10 @@ export default class Card extends Component {
   }
 
   render() {
-
     return(
       <div>
-        {this.props.hand.map(card => {
-          console.log(card);
-          <img key='card' src={'./' + card} />
-        })}
+        {this.props.hand.map( card => <img key={card} alt={card} src={require('./images/small/' + card)} />)}
       </div>
     )
   };
-}
+} 
